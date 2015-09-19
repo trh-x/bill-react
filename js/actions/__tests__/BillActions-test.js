@@ -2,11 +2,10 @@ jest.dontMock('../BillActions.js');
 jest.dontMock('../../constants/BillConstants');
 jest.dontMock('keymirror');
 
-import React from 'react/addons';
+const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
-import AppDispatcher from '../../dispatcher/AppDispatcher';
-// Need these CommonJS requires instead of imports to avoid hoisting imports above the dontMock() calls
+const AppDispatcher = require('../../dispatcher/AppDispatcher');
 const BillConstants = require('../../constants/BillConstants');
 const BillActions = require('../BillActions.js');
 

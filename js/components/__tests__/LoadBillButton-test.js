@@ -1,26 +1,26 @@
 jest.dontMock('../LoadBillButton.js');
 
-import React from 'react/addons';
+const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
-import BillActions from '../../actions/BillActions';
+const BillActions = require('../../actions/BillActions');
 const LoadBillButton = require('../LoadBillButton.js');
 
 describe('LoadBillButton', function() {
-    let instance, node;
+    let buttonNode;
 
     beforeEach(function() {
-        instance = TestUtils.renderIntoDocument( <LoadBillButton /> );
-        node = React.findDOMNode(instance);
+        const loadBillButton = TestUtils.renderIntoDocument( <LoadBillButton /> );
+        buttonNode = React.findDOMNode(loadBillButton);
     });
 
     it('renders a button with the text "Load Bill"', function() {
-        expect(node.tagName).toBe('BUTTON');
-        expect(node.textContent).toBe('Load Bill');
+        expect(buttonNode.tagName).toBe('BUTTON');
+        expect(buttonNode.textContent).toBe('Load Bill');
     });
 
     it('calls BillActions.loadBill() on click', function() {
-        TestUtils.Simulate.click(node);
+        TestUtils.Simulate.click(buttonNode);
         expect(BillActions.loadBill.mock.calls.length).toBe(1);
     });
 });
