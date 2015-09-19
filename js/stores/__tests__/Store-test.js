@@ -1,4 +1,4 @@
-jest.dontMock('../Store.js');
+jest.dontMock('../Store');
 
 const EventEmitter = require('events');
 const Store = require('../Store');

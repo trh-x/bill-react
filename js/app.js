@@ -1,7 +1,8 @@
 import React from 'react';
-import LoadBillButton from './components/LoadBillButton';
+import BillApp from './components/BillApp';
+import BillStore from './stores/BillStore';
 
 React.render(
-    <LoadBillButton />,
-    document.getElementById('load-bill-button')
+    <BillApp />,
+    document.getElementById('bill-app')
 );

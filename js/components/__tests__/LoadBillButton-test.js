@@ -1,10 +1,10 @@
-jest.dontMock('../LoadBillButton.js');
+jest.dontMock('../LoadBillButton');
 
 const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
 const BillActions = require('../../actions/BillActions');
-const LoadBillButton = require('../LoadBillButton.js');
+const LoadBillButton = require('../LoadBillButton');
 
 describe('LoadBillButton', function() {
     let buttonNode;

@@ -1,10 +1,10 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
-import BillConstants from '../constants/BillConstants';
+import { ActionTypes } from '../constants/BillConstants';
 
 export default {
     loadBill: function() {
         AppDispatcher.dispatch({
-            actionType: BillConstants.BILL_LOAD
+            type: ActionTypes.BILL_LOAD
         });
     }
 };
