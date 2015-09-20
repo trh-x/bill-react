@@ -16,7 +16,7 @@ describe('LoadBillButton', function() {
 
     it('renders a button with the text "Load Bill"', function() {
         expect(buttonNode.tagName).toBe('BUTTON');
-        expect(buttonNode.className).toBe('btn btn-primary');
+        expect(buttonNode.className).toBe('btn btn-primary pull-right');
         expect(buttonNode.textContent).toBe('Load Bill');
     });
 

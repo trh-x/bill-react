@@ -14,7 +14,7 @@ class LoadBillButton extends React.Component {
 
     render() {
         return (
-            <button className="btn btn-primary" onClick={this.loadBill}>Load Bill</button>
+            <button className="btn btn-primary pull-right" onClick={this.loadBill}>Load Bill</button>
         );
     }
 };
