@@ -20,7 +20,7 @@ describe('BillLoader', function() {
     });
 
     it('dispatches the correct event when the Ajax callback is received', function() {
-        const MOCK_BILL = 'Fake';
+        const MOCK_BILL = { foo: 'Bar' };
         $.get.mockReturnValue({
             done: successHandler => successHandler(MOCK_BILL)
         });

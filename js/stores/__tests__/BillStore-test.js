@@ -12,6 +12,10 @@ AppDispatcher.register.mockReturnValue(MOCK_TOKEN);
 const BillStore = require('../BillStore');
 
 describe('BillStore', function() {
+    it('initialises with an empty bill', function() {
+        expect(BillStore.getBill()).toEqual({});
+    });
+
     it('registers with AppDispatcher', function() {
         expect(AppDispatcher.register.mock.calls.length).toBe(1);
         expect(AppDispatcher.register).toBeCalledWith(jasmine.any(Function));
@@ -26,7 +30,7 @@ describe('BillStore', function() {
     });
 
     it('correctly stores data and invokes Store.emitChange() when an ActionTypes.BILL_LOAD_SUCCESS action is dispatched', function() {
-        const MOCK_BILL = 'Fake';
+        const MOCK_BILL = { foo: 'Bar' };
         Store.prototype.emitChange = jest.genMockFn();
 
         AppDispatcher.register.mock.calls[0][0]({

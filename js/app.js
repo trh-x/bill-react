@@ -4,5 +4,5 @@ import BillStore from './stores/BillStore';
 
 React.render(
     <BillApp />,
-    document.getElementById('bill-app')
+    document.body
 );

@@ -8,10 +8,10 @@ class BillView extends React.Component {
     render() {
         return (
             <div>
-                <BillStatement />
-                <BillPackage />
-                <BillCallCharges />
-                <BillOnlineStore />
+                <BillStatement bill={this.props.bill} />
+                <BillPackage bill={this.props.bill} />
+                <BillCallCharges bill={this.props.bill} />
+                <BillOnlineStore bill={this.props.bill} />
             </div>
         );
     }

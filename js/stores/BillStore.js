@@ -3,7 +3,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import { ActionTypes } from '../constants/BillConstants';
 import BillLoader from '../data/BillLoader';
 
-let bill = null;
+let bill = {};
 
 class BillStore extends Store {
     constructor() {
