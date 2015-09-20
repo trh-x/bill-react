@@ -7,10 +7,10 @@ const BillOnlineStore = require('../BillOnlineStore');
 
 describe('BillOnlineStore', function() {
     it('renders the correct markup', function() {
-        let shallowRenderer = TestUtils.createRenderer();
+        const shallowRenderer = TestUtils.createRenderer();
         shallowRenderer.render( <BillOnlineStore /> );
 
-        let result = shallowRenderer.getRenderOutput();
+        const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');
         //expect(result.props.children).toEqual([]);
     });

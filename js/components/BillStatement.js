@@ -3,7 +3,7 @@ import BillItem from './BillItem';
 
 class BillStatement extends React.Component {
     render() {
-        let formatDateForProperty = property => {
+        const formatDateForProperty = property => {
             if (this.props.bill.statement == null) return '';
             return this.props.bill.statement[property];
         }

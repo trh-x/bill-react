@@ -3,9 +3,10 @@ jest.dontMock('../Store');
 const EventEmitter = require('events');
 const Store = require('../Store');
 
+const CHANGE_EVENT = 'change';
+
 describe('Store', function() {
     let store;
-    const CHANGE_EVENT = 'change';
 
     EventEmitter.prototype.emit = jest.genMockFn();
     EventEmitter.prototype.on = jest.genMockFn();

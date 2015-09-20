@@ -30,14 +30,14 @@ describe('BillStore', function() {
     });
 
     it('correctly stores data and invokes Store.emitChange() when an ActionTypes.BILL_LOAD_SUCCESS action is dispatched', function() {
-        const MOCK_BILL = { foo: 'Bar' };
+        const mockBill = { foo: 'Bar' };
         Store.prototype.emitChange = jest.genMockFn();
 
         AppDispatcher.register.mock.calls[0][0]({
             type: ActionTypes.BILL_LOAD_SUCCESS,
-            bill: MOCK_BILL
+            bill: mockBill
         });
         expect(BillStore.emitChange.mock.calls.length).toBe(1);
-        expect(BillStore.getBill()).toBe(MOCK_BILL);
+        expect(BillStore.getBill()).toBe(mockBill);
     });
 });

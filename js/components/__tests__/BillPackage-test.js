@@ -7,10 +7,10 @@ const BillPackage = require('../BillPackage');
 
 describe('BillPackage', function() {
     it('renders the correct markup', function() {
-        let shallowRenderer = TestUtils.createRenderer();
+        const shallowRenderer = TestUtils.createRenderer();
         shallowRenderer.render( <BillPackage /> );
 
-        let result = shallowRenderer.getRenderOutput();
+        const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');
         //expect(result.props.children).toEqual([]);
     });

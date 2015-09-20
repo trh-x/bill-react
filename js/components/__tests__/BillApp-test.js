@@ -14,10 +14,10 @@ describe('BillApp', function() {
     //TestUtils.mockComponent(LoadBillButton, 'load-bill-button');
 
     it('renders the correct markup', function() {
-        let shallowRenderer = TestUtils.createRenderer();
+        const shallowRenderer = TestUtils.createRenderer();
         shallowRenderer.render( <BillApp /> );
 
-        let result = shallowRenderer.getRenderOutput();
+        const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('main');
         expect(result.props.children).toEqual([
             <section className="col-sm-6"><LoadBillButton /></section>,
@@ -39,7 +39,7 @@ describe('BillApp', function() {
         });
 
         it('removes the change listener when unmounted from the document', function() {
-            let container = document.createElement('div');
+            const container = document.createElement('div');
             React.render( <BillApp />, container );
 
             React.unmountComponentAtNode(container);
@@ -48,13 +48,13 @@ describe('BillApp', function() {
         });
 
         it('updates its state when notified of a change to the store', function() {
-            const MOCK_BILL = { foo: 'Bar' };
-            BillStore.getBill.mockReturnValue(MOCK_BILL);
+            const mockBill = { foo: 'Bar' };
+            BillStore.getBill.mockReturnValue(mockBill);
             React.Component.prototype.setState = jest.genMockFn();
 
             BillStore.addChangeListener.mock.calls[0][0]();
             expect(billApp.setState.mock.calls.length).toBe(1);
-            expect(billApp.setState).toBeCalledWith({ bill: MOCK_BILL });
+            expect(billApp.setState).toBeCalledWith({ bill: mockBill });
         });
     });
 });

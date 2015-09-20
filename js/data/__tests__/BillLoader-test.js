@@ -20,15 +20,15 @@ describe('BillLoader', function() {
     });
 
     it('dispatches the correct event when the Ajax callback is received', function() {
-        const MOCK_BILL = { foo: 'Bar' };
+        const mockBill = { foo: 'Bar' };
         $.get.mockReturnValue({
-            done: successHandler => successHandler(MOCK_BILL)
+            done: successHandler => successHandler(mockBill)
         });
         BillLoader.loadBill();
         expect(AppDispatcher.dispatch.mock.calls.length).toBe(1);
         expect(AppDispatcher.dispatch).toBeCalledWith({
             type: ActionTypes.BILL_LOAD_SUCCESS,
-            bill: MOCK_BILL
+            bill: mockBill
         });
     });
 });

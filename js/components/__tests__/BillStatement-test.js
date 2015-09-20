@@ -7,11 +7,11 @@ const BillStatement = require('../BillStatement');
 
 describe('BillStatement', function() {
     it('renders the correct markup', function() {
-        let shallowRenderer = TestUtils.createRenderer();
-        const MOCK_BILL = require('../../../shortBill.json');
-        shallowRenderer.render( <BillStatement bill={MOCK_BILL} /> );
+        const shallowRenderer = TestUtils.createRenderer();
+        const mockBill = require('../../../shortBill.json');
+        shallowRenderer.render( <BillStatement bill={mockBill} /> );
 
-        let result = shallowRenderer.getRenderOutput();
+        const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');
         //expect(result.props.children).toEqual([]);
     });

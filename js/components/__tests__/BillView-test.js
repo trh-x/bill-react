@@ -11,17 +11,17 @@ const BillView = require('../BillView');
 
 describe('BillView', function() {
     it('renders the correct markup', function() {
-        let shallowRenderer = TestUtils.createRenderer();
-        const MOCK_BILL = { foo: 'Bar' };
-        shallowRenderer.render( <BillView bill={MOCK_BILL} /> );
+        const shallowRenderer = TestUtils.createRenderer();
+        const mockBill = { foo: 'Bar' };
+        shallowRenderer.render( <BillView bill={mockBill} /> );
 
-        let result = shallowRenderer.getRenderOutput();
+        const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('div');
         expect(result.props.children).toEqual([
-            <BillStatement bill={MOCK_BILL} />,
-            <BillPackage bill={MOCK_BILL} />,
-            <BillCallCharges bill={MOCK_BILL} />,
-            <BillOnlineStore bill={MOCK_BILL} />
+            <BillStatement bill={mockBill} />,
+            <BillPackage bill={mockBill} />,
+            <BillCallCharges bill={mockBill} />,
+            <BillOnlineStore bill={mockBill} />
         ]);
     });
 });
