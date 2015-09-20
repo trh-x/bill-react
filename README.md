@@ -1,1 +1,1 @@
-# Sky Test in React #
+# A React Exercise in Billing #

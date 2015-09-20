@@ -19,8 +19,7 @@
   "callCharges": {
     "calls": [
       { "called": "07818828768", "duration": "00:23:03", "cost": 2.13 },
-      { "called": "07818828768", "duration": "00:23:03", "cost": 2.13 },
-      { "called": "02073545953", "duration": "00:23:03", "cost": 2.13 }
+      { "called": "02031234567", "duration": "00:05:16", "cost": 0.21 }
     ],
     "total": 59.64
   },

@@ -1,12 +1,12 @@
 {
-  "name": "skytest",
+  "name": "bill-react",
   "version": "1.0.0",
-  "description": "Sky Test",
+  "description": "A React Exercise in Billing",
   "main": "js/app.js",
   "scripts": {
     "start": "watchify -o js/bundle.js -v -d js/app.js",
     "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
-    "test": "jest -w 15"
+    "test": "jest -w 20"
   },
   "author": "Tom Rees-Herdman",
   "license": "ISC",
@@ -31,7 +31,15 @@
     "rootDir": "./js",
     "scriptPreprocessor": "../node_modules/babel-jest",
     "unmockedModulePathPatterns": [
-      "../node_modules/react"
+      "../node_modules/react",
+      "test"
     ]
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "jquery": "^2.1.4",
+    "keymirror": "^0.1.1",
+    "moment": "^2.10.6",
+    "react": "^0.13.3"
   }
 }
