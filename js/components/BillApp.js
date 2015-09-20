@@ -4,7 +4,7 @@ import BillView from './BillView';
 import BillStore from '../stores/BillStore';
 
 function getBillState() {
-    return { bill: BillStore.getBill() }
+    return { bill: BillStore.getBill() };
 }
 
 class BillApp extends React.Component {
@@ -24,14 +24,14 @@ class BillApp extends React.Component {
 
     render() {
         return (
-            <div>
-                <section>
+            <main className="container">
+                <section className="col-sm-6">
                     <LoadBillButton />
                 </section>
-                <section>
+                <section className="col-sm-6">
                     <BillView bill={this.state.bill} />
                 </section>
-            </div>
+            </main>
         );
     }
 

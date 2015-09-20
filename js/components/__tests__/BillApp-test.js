@@ -18,10 +18,10 @@ describe('BillApp', function() {
         shallowRenderer.render( <BillApp /> );
 
         let result = shallowRenderer.getRenderOutput();
-        expect(result.type).toBe('div');
+        expect(result.type).toBe('main');
         expect(result.props.children).toEqual([
-            <section><LoadBillButton /></section>,
-            <section><BillView /></section>
+            <section className="col-sm-6"><LoadBillButton /></section>,
+            <section className="col-sm-6"><BillView bill={undefined} /></section>
         ]);
     });
 

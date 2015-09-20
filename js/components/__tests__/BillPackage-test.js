@@ -11,7 +11,7 @@ describe('BillPackage', function() {
         shallowRenderer.render( <BillPackage /> );
 
         let result = shallowRenderer.getRenderOutput();
-        expect(result.type).toBe('div');
+        expect(result.type).toBe('section');
         //expect(result.props.children).toEqual([]);
     });
 });
