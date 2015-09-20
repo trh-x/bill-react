@@ -1,6 +1,6 @@
 import React from 'react';
 
-class BillPackage extends React.Component {
+class OnlineStore extends React.Component {
     render() {
         return (
             <section>
@@ -9,4 +9,4 @@ class BillPackage extends React.Component {
     }
 }
 
-export default BillPackage;
+export default OnlineStore;

@@ -1,14 +1,15 @@
-jest.dontMock('../BillPackage');
+jest.dontMock('../Statement');
 
 const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
-const BillPackage = require('../BillPackage');
+const Statement = require('../Statement');
 
-describe('BillPackage', function() {
+describe('Statement', function() {
     it('renders the correct markup', function() {
         const shallowRenderer = TestUtils.createRenderer();
-        shallowRenderer.render( <BillPackage /> );
+        const mock = require('../../../../shortBill.json');
+        shallowRenderer.render( <Statement bill={mock} /> );
 
         const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');

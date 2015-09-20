@@ -1,7 +1,7 @@
 import React from 'react';
-import BillItem from './BillItem';
+import Item from './Item';
 
-class BillStatement extends React.Component {
+class Statement extends React.Component {
     render() {
         const formatDateForProperty = property => {
             if (this.props.bill.statement == null) return '';
@@ -14,11 +14,11 @@ class BillStatement extends React.Component {
                     <h2>Statement</h2>
                 </header>
                 <div>
-                    <BillItem name="Generated" value={formatDateForProperty('generated')} />
+                    <Item name="Generated" value={formatDateForProperty('generated')} />
                 </div>
             </section>
         );
     }
 }
 
-export default BillStatement;
+export default Statement;

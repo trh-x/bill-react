@@ -1,14 +1,14 @@
-jest.dontMock('../BillCallCharges');
+jest.dontMock('../Package');
 
 const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
-const BillCallCharges = require('../BillCallCharges');
+const Package = require('../Package');
 
-describe('BillCallCharges', function() {
+describe('Package', function() {
     it('renders the correct markup', function() {
         const shallowRenderer = TestUtils.createRenderer();
-        shallowRenderer.render( <BillCallCharges /> );
+        shallowRenderer.render( <Package /> );
 
         const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');

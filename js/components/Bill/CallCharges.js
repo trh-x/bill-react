@@ -1,6 +1,6 @@
 import React from 'react';
 
-class BillCallCharges extends React.Component {
+class CallCharges extends React.Component {
     render() {
         return (
             <section>
@@ -9,4 +9,4 @@ class BillCallCharges extends React.Component {
     }
 }
 
-export default BillCallCharges;
+export default CallCharges;
