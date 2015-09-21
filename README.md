@@ -31,7 +31,7 @@ As mentioned, I went way overboard on this. Although the requirements could be s
 
 I used React to create a set of modular components to render the view, and used Flux to manage the data flow. Writing in ES6 was refreshing, I have been using CoffeeScript recently so it's good to get exposure to the next generation of vanilla JS.
 
-To run in the browser, Browserify is used to transpile ES6 to ES5 and bundle the modules together according to their dependencies. Bootstrap is used for some simple out-of-the-box styles to present the view.
+To run in the browser, Browserify is used with Babel to transpile ES6 to ES5 and bundle the modules together according to their dependencies. Bootstrap is used for some simple out-of-the-box styles to present the view.
 
 Following best practice and aware of the assessment criteria, I developed using TDD/BDD with unit tests written in Jest covering the entire codebase.
 
