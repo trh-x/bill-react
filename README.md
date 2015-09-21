@@ -6,7 +6,7 @@ Having first read about React many moons ago, my interest was piqued but I never
 
 Time waits for no man though, and nowhere is this truer than within the realms of front-end JS development. So, when I was approached with a React job at a prestigious media organisation, I expressed my interest. I was given a technical exercise to perform.
 
-The brief for the task was simple, but I took the opportunity to vastly overengineer the solution and use it as a learning tool for React, Flux and ECMAScript 6, none of which I had previously used.
+The brief for the task was simple, but I took the opportunity to vastly overengineer the solution and use it as a learning tool for React, Flux and ECMAScript 6.
 
 ## The Brief ##
 
