@@ -1,4 +1,4 @@
 {
     "CURRENCY_PREFIX": "£",
-    "BILL_URL": "http://localhost:8082/bill.json"
+    "BILL_URL": "http://localhost:8000/bill.json"
 }
