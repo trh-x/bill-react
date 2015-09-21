@@ -27,7 +27,7 @@ class OnlineStore extends React.Component {
         }
 
         return (
-            <Section title="Online Store">
+            <Section title="Sky Store">
                 {children}
             </Section>
         );
