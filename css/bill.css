@@ -34,3 +34,10 @@ body > header > h1 {
   border-top: 1px solid #AAA;
   float: left;
 }
+
+.bill-call-charges {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    float: left;
+}

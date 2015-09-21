@@ -17,8 +17,8 @@ class CallCharges extends React.Component {
                 </div>
             );
 
-            this.props.bill.callCharges.calls.forEach(function(call, index) {
-                children.push(
+            let callCharges = this.props.bill.callCharges.calls.map((call, index) => {
+                return (
                     <div key={index}>
                         {
                             [ 'called', 'duration' ].map( property => <span key={property} className="col-sm-4">{call[property]}</span> )
@@ -28,6 +28,7 @@ class CallCharges extends React.Component {
                 );
             });
 
+            children.push( <div key="callCharges" className="bill-call-charges">{callCharges}</div> );
             children.push( <Total key="total" total={this.props.bill.callCharges.total} /> );
         }
 
