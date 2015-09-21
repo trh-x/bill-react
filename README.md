@@ -85,7 +85,7 @@ $ npm test
 
 ## What I Learned ##
 
-I learned a lot from this exercise, namely that React can be a lot of fun and lends itself to good engineering practices.
+I learned a lot from this exercise, notably that React can be a lot of fun and lends itself to good engineering practices.
 
 Interestingly, I actually spent a lot longer trying to figure out how to test things using Jest than learning React itself, which is pretty straightforward conceptually and has a nice API.
 
