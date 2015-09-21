@@ -69,7 +69,6 @@ npm run build
 In your web browser, navigate to `index.html` in the root of the repository. Either browse to it as a file, or set up a simple web server, e.g.
 
 ```
-# In root of repository
 $ python -m SimpleHTTPServer 8000
 ```
 
