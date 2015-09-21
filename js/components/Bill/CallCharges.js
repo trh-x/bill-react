@@ -10,9 +10,9 @@ class CallCharges extends React.Component {
 
         if (this.props.bill.callCharges != null) {
             children.push(
-                <div key="header">
+                <div key="header" className="bill-call-charges-header">
                     {
-                        [ 'Called', 'Duration', 'Cost' ].map( title => <h4 key={title} className="col-sm-4">{title}</h4> )
+                        [ 'Called', 'Duration', 'Cost' ].map( title => <h4 key={title} className="col-sm-4 col-xs-4">{title}</h4> )
                     }
                 </div>
             );
@@ -21,9 +21,9 @@ class CallCharges extends React.Component {
                 return (
                     <div key={index}>
                         {
-                            [ 'called', 'duration' ].map( property => <span key={property} className="col-sm-4">{call[property]}</span> )
+                            [ 'called', 'duration' ].map( property => <span key={property} className="col-sm-4 col-xs-4">{call[property]}</span> )
                         }
-                        <span key="cost" className="col-sm-4">{CurrencyUtils.formatCurrency(call.cost)}</span>
+                        <span key="cost" className="col-sm-4 col-xs-4">{CurrencyUtils.formatCurrency(call.cost)}</span>
                     </div>
                 );
             });

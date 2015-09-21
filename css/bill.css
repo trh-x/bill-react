@@ -6,6 +6,8 @@ body > header > h1 {
     border: 1px solid #2e6da4;
     border-radius: 5px;
     margin-bottom: 1em;
+    float: left;
+    width: 100%;
 }
 
 .bill-section h3 {
@@ -38,6 +40,50 @@ body > header > h1 {
 .bill-call-charges {
     width: 100%;
     max-height: 200px;
-    overflow-y: scroll;
+    overflow: scroll;
     float: left;
+}
+
+/* Bootstrap breakpoints */
+@media(max-width:767px) {
+    main > div > section:first-child {
+        margin-bottom: 1em;
+    }
+
+    .bill-call-charges-header > h4:first-child,
+    .bill-call-charges > div > span:first-child {
+        padding-left: 0;
+    }
+
+    .bill-call-charges > div > span:last-child {
+        padding-right: 0;
+    }
+}
+
+@media(min-width:768px) {
+    .bill-call-charges {
+        font-size: 11px;
+    }
+}
+
+@media(min-width:992px){
+    .bill-call-charges {
+        font-size: 14px;
+    }
+}
+
+/* Additional breakpoint */
+@media(max-width:360px) {
+    h4.col-xs-4 {
+        font-size: 1.2em;
+    }
+
+    span.col-xs-4 {
+        font-size: 0.9em;
+    }
+
+    .bill-item .col-sm-5,
+    .bill-item .col-sm-7 {
+        padding-left: 0;
+    }
 }

@@ -21,25 +21,25 @@ describe('CallCharges', function() {
         TestUtils.isElementOfType(result.type, <Section /> )
         expect(result.props.title).toBe('Call Charges');
         expect(result.props.children).toEqual([
-            <div key="header">
-                <h4 key="Called" className="col-sm-4">Called</h4>
-                <h4 key="Duration" className="col-sm-4">Duration</h4>
-                <h4 key="Cost" className="col-sm-4">Cost</h4>
+            <div key="header" className="bill-call-charges-header">
+                <h4 key="Called" className="col-sm-4 col-xs-4">Called</h4>
+                <h4 key="Duration" className="col-sm-4 col-xs-4">Duration</h4>
+                <h4 key="Cost" className="col-sm-4 col-xs-4">Cost</h4>
             </div>,
             <div key="callCharges" className="bill-call-charges">
                 <div key="0">
                     {[
-                        <span key="called" className="col-sm-4">07818828768</span>,
-                        <span key="duration" className="col-sm-4">00:23:03</span>
+                        <span key="called" className="col-sm-4 col-xs-4">07818828768</span>,
+                        <span key="duration" className="col-sm-4 col-xs-4">00:23:03</span>
                     ]}
-                    <span key="cost" className="col-sm-4">GBP 2.13</span>
+                    <span key="cost" className="col-sm-4 col-xs-4">GBP 2.13</span>
                 </div>
                 <div key="1">
                     {[
-                        <span key="called" className="col-sm-4">02031234567</span>,
-                        <span key="duration" className="col-sm-4">00:05:16</span>
+                        <span key="called" className="col-sm-4 col-xs-4">02031234567</span>,
+                        <span key="duration" className="col-sm-4 col-xs-4">00:05:16</span>
                     ]}
-                    <span key="cost" className="col-sm-4">GBP 0.21</span>
+                    <span key="cost" className="col-sm-4 col-xs-4">GBP 0.21</span>
                 </div>
             </div>,
             <Total key="total" total={59.64} />

@@ -12,6 +12,7 @@ describe('Item', function() {
 
         const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('p');
+        expect(result.props.className).toBe('bill-item');
         expect(result.props.children).toEqual([
             <span className="col-sm-7 text-right"><strong>Foo</strong></span>,
             <span className="col-sm-5">Bar</span>
