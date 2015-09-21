@@ -74,7 +74,11 @@ $ python -m SimpleHTTPServer 8000
 
 Then navigate to `http://localhost:8000`
 
-You can also see the app running here: http://trh-x.com/bill-react/
+### Online demo ###
+
+You can also see the app running here:
+
+http://trh-x.com/bill-react/
 
 
 ## Testing ##
