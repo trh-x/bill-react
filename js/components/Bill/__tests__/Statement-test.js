@@ -25,11 +25,11 @@ describe('Statement', function() {
         TestUtils.isElementOfType(result.type, <Section /> )
         expect(result.props.title).toBe('Statement');
         expect(result.props.children).toEqual([
-            <Item key="generated" name="generated" value="January 11, 2015" />,
-            <Item key="due" name="due" value="January 25, 2015" />,
+            <Item key="generated" name="Generated" value="January 11, 2015" />,
+            <Item key="due" name="Due" value="January 25, 2015" />,
             <SubSection key="period" title="Period">
-                <Item key="from" name="from" value="January 26, 2015" />
-                <Item key="to" name="to" value="February 25, 2015" />
+                <Item key="from" name="From" value="January 26, 2015" />
+                <Item key="to" name="To" value="February 25, 2015" />
             </SubSection>,
             <Total key="total" total={136.03} />
         ]);

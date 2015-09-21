@@ -24,14 +24,14 @@ class BillApp extends React.Component {
 
     render() {
         return (
-            <main className="container">
-                <section className="col-sm-6">
+            <div className="container">
+                <section className="col-sm-5 col-sm-offset-1">
                     <LoadBillButton />
                 </section>
-                <section className="col-sm-6">
+                <section className="col-sm-5">
                     <BillView bill={this.state.bill} />
                 </section>
-            </main>
+            </div>
         );
     }
 

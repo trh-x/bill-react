@@ -10,9 +10,9 @@
   "total": 136.03,
   "package": {
     "subscriptions": [
-      { "type": "tv", "name": "All The Channels, All The Time", "cost": 50.00 },
+      { "type": "tv", "name": "All You Can Eat TV Dinners", "cost": 50.00 },
       { "type": "talk", "name": "Mo' Minutes, Mo' Problems", "cost": 5.00 },
-      { "type": "broadband", "name": "Fat Pipe Package", "cost": 16.40 }
+      { "type": "broadband", "name": "Extreme Cable XXL", "cost": 16.40 }
     ],
     "total": 71.40
   },

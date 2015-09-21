@@ -15,10 +15,11 @@ describe('Total', function() {
         shallowRenderer.render( <Total total={12.5} /> );
 
         const result = shallowRenderer.getRenderOutput();
-        TestUtils.isElementOfType(result.type, <SubSection /> )
-        expect(result.props.title).toBe('Total');
-        expect(result.props.children).toEqual(
-            <p>GBP 12.50</p>
-        );
+        expect(result.type).toBe('section');
+        expect(result.props.className).toBe('bill-total');
+        expect(result.props.children).toEqual([
+            <span className="col-sm-7 text-right"><strong>Total</strong></span>,
+            <span className="col-sm-5">GBP 12.50</span>
+        ]);
     });
 });

@@ -12,7 +12,7 @@ class CallCharges extends React.Component {
             children.push(
                 <div key="header">
                     {
-                        [ 'Called', 'Duration', 'Cost' ].map( title => <h5 key={title} className="col-sm-4">{title}</h5> )
+                        [ 'Called', 'Duration', 'Cost' ].map( title => <h4 key={title} className="col-sm-4">{title}</h4> )
                     }
                 </div>
             );

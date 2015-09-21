@@ -24,13 +24,13 @@ describe('Package', function() {
         expect(result.props.title).toBe('Subcriptions');
         expect(result.props.children).toEqual([
             <SubSection key="tv" title="TV">
-                <Item key="subscription" name="All The Channels, All The Time" value="GBP 50.00" />
+                <Item key="subscription" name="All You Can Eat TV Dinners" value="GBP 50.00" />
             </SubSection>,
             <SubSection key="talk" title="Talk">
                 <Item key="subscription" name="Mo' Minutes, Mo' Problems" value="GBP 5.00" />
             </SubSection>,
             <SubSection key="broadband" title="Broadband">
-                <Item key="subscription" name="Fat Pipe Package" value="GBP 16.40" />
+                <Item key="subscription" name="Extreme Cable XXL" value="GBP 16.40" />
             </SubSection>,
             <Total key="total" total={71.4} />
         ]);

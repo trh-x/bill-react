@@ -22,9 +22,9 @@ describe('CallCharges', function() {
         expect(result.props.title).toBe('Call Charges');
         expect(result.props.children).toEqual([
             <div key="header">
-                <h5 key="Called" className="col-sm-4">Called</h5>
-                <h5 key="Duration" className="col-sm-4">Duration</h5>
-                <h5 key="Cost" className="col-sm-4">Cost</h5>
+                <h4 key="Called" className="col-sm-4">Called</h4>
+                <h4 key="Duration" className="col-sm-4">Duration</h4>
+                <h4 key="Cost" className="col-sm-4">Cost</h4>
             </div>,
             <div key="0">
                 {[

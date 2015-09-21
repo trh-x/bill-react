@@ -17,8 +17,9 @@ describe('SubSection', function() {
 
         const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');
+        expect(result.props.className).toBe('bill-subsection');
         expect(result.props.children).toEqual([
-            <header>
+            <header className="col-sm-12">
                 <h4>Lost Cities</h4>
             </header>,
             <div>

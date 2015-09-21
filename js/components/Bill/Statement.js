@@ -10,13 +10,17 @@ import Item from './Item';
 
 class Statement extends React.Component {
     render() {
+        function upperCaseFirst(titleValue) {
+            return titleValue[0].toUpperCase() + titleValue.substring(1);
+        }
+
         function formatDate(dateValue) {
             return moment(dateValue).format('LL');
         }
 
         function addDateChildItems(children, obj, ...properties) {
             for (const property of properties) {
-                children.push( <Item key={property} name={property} value={formatDate(obj[property])} /> );
+                children.push( <Item key={property} name={upperCaseFirst(property)} value={formatDate(obj[property])} /> );
             }
         }
 

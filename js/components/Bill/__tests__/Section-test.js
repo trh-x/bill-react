@@ -17,11 +17,12 @@ describe('Section', function() {
 
         const result = shallowRenderer.getRenderOutput();
         expect(result.type).toBe('section');
+        expect(result.props.className).toBe('bill-section col-sm-12');
         expect(result.props.children).toEqual([
-            <header>
-                <h2>Lost Cities</h2>
+            <header className="col-sm-12">
+                <h3>Lost Cities</h3>
             </header>,
-            <div>
+            <div className="col-sm-12">
                 <article>Atlantis</article>
                 <article>Shambhala</article>
             </div>

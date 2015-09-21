@@ -3,5 +3,5 @@ import BillApp from './components/BillApp';
 
 React.render(
     <BillApp />,
-    document.body
+    document.getElementById('bill-app')
 );
