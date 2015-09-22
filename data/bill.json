@@ -49,7 +49,7 @@
     ],
     "total": 59.64
   },
-  "skyStore": {
+  "onlineStore": {
     "rentals": [
       { "title": "50 Shades of Grey", "cost": 4.99 }
     ],
