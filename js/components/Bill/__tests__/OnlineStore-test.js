@@ -18,7 +18,7 @@ describe('OnlineStore', function() {
 
         const result = shallowRenderer.getRenderOutput();
         TestUtils.isElementOfType( result.type, <Section /> )
-        expect(result.props.title).toBe('Online Store');
+        expect(result.props.title).toBe('Sky Store');
         expect(result.props.children).toEqual([
             <SubSection key="rentals" title="Rentals">
                 {[
