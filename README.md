@@ -15,7 +15,7 @@ The brief for the task was simple, but I took the opportunity to vastly overengi
 * Use any language, tools or framework
 * Consume the bill as JSON from a given endpoint:
 ```
-http://trh-x.com/demo/bill/bill.json
+http://trh-x.com/bill/bill.json
 ```
 
 ### Assessment criteria ###
@@ -78,7 +78,7 @@ Then navigate to `http://localhost:8000`
 
 You can also see the app running here:
 
-http://trh-x.com/demo/bill-react/
+http://trh-x.com/bill-react/
 
 
 ## Testing ##
