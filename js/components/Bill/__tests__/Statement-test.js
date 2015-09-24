@@ -6,10 +6,7 @@ const TestUtils = React.addons.TestUtils;
 const BillTestUtils = require('../../../testUtils/BillTestUtils');
 
 const CurrencyUtils = require('../../../utils/CurrencyUtils');
-const Section = require('../Section');
-const SubSection = require('../SubSection');
-const Total = require('../Total');
-const Item = require('../Item');
+const { Section, SubSection, Total, Item } = require('../Reusable');
 const Statement = require('../Statement');
 
 describe('Statement', function() {
@@ -22,7 +19,7 @@ describe('Statement', function() {
         shallowRenderer.render( <Statement bill={mockBill} /> );
 
         const result = shallowRenderer.getRenderOutput();
-        TestUtils.isElementOfType(result.type, <Section /> )
+        TestUtils.isElementOfType( result.type, <Section /> )
         expect(result.props.title).toBe('Statement');
         expect(result.props.children).toEqual([
             <Item key="generated" name="Generated" value="January 11, 2015" />,

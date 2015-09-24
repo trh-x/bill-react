@@ -3,10 +3,7 @@ import React from 'react';
 import moment from 'moment';
 
 import CurrencyUtils from '../../utils/CurrencyUtils';
-import Section from './Section';
-import SubSection from './SubSection';
-import Total from './Total';
-import Item from './Item';
+import { Section, SubSection, Total, Item } from './Reusable';
 
 class Statement extends React.Component {
     render() {

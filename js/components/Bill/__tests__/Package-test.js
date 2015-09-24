@@ -5,10 +5,7 @@ const TestUtils = React.addons.TestUtils;
 const BillTestUtils = require('../../../testUtils/BillTestUtils');
 
 const CurrencyUtils = require('../../../utils/CurrencyUtils');
-const Section = require('../Section');
-const SubSection = require('../SubSection');
-const Total = require('../Total');
-const Item = require('../Item');
+const { Section, SubSection, Total, Item } = require('../Reusable');
 const Package = require('../Package');
 
 describe('Package', function() {
@@ -20,7 +17,7 @@ describe('Package', function() {
         shallowRenderer.render( <Package bill={mockBill} /> );
 
         const result = shallowRenderer.getRenderOutput();
-        TestUtils.isElementOfType(result.type, <Section /> )
+        TestUtils.isElementOfType( result.type, <Section /> )
         expect(result.props.title).toBe('Subcriptions');
         expect(result.props.children).toEqual([
             <SubSection key="tv" title="TV">

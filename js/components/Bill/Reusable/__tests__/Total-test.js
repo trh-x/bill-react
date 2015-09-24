@@ -3,7 +3,7 @@ jest.dontMock('../Total');
 const React = require('react/addons');
 const TestUtils = React.addons.TestUtils;
 
-const CurrencyUtils = require('../../../utils/CurrencyUtils');
+const CurrencyUtils = require('../../../../utils/CurrencyUtils');
 const SubSection = require('../SubSection');
 const Total = require('../Total');
 

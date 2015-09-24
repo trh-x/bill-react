@@ -5,8 +5,7 @@ const TestUtils = React.addons.TestUtils;
 const BillTestUtils = require('../../../testUtils/BillTestUtils');
 
 const CurrencyUtils = require('../../../utils/CurrencyUtils');
-const Section = require('../Section');
-const Total = require('../Total');
+const { Section, Total } = require('../Reusable');
 const CallCharges = require('../CallCharges');
 
 describe('CallCharges', function() {
@@ -18,7 +17,7 @@ describe('CallCharges', function() {
         shallowRenderer.render( <CallCharges bill={mockBill} /> );
 
         const result = shallowRenderer.getRenderOutput();
-        TestUtils.isElementOfType(result.type, <Section /> )
+        TestUtils.isElementOfType( result.type, <Section /> )
         expect(result.props.title).toBe('Call Charges');
         expect(result.props.children).toEqual([
             <div key="header" className="bill-call-charges-header">

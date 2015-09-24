@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CurrencyUtils from '../../utils/CurrencyUtils';
+import CurrencyUtils from '../../../utils/CurrencyUtils';
 import Item from './Item';
 
 class Total extends React.Component {

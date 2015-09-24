@@ -1,8 +1,7 @@
 import React from 'react';
 
 import CurrencyUtils from '../../utils/CurrencyUtils';
-import Section from './Section';
-import Total from './Total';
+import { Section, Total } from './Reusable';
 
 class CallCharges extends React.Component {
     render() {
